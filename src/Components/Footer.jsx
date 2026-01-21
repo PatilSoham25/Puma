@@ -7,7 +7,8 @@ const Footer = () => {
       {/* Top Divider */}
       <div className="border-t border-gray-700 mb-12" />
 
-        <div className="flex justify-between">
+        <div className="flex justify-between"
+        data-aos="fade-down">
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbz7Z44uTlIs6bXrASDRh19Da_ArkCvW1msg&s" 
           alt=""
           className="w-40 h-30 px-2 mb-6"
@@ -24,7 +25,8 @@ const Footer = () => {
         </div>
 
       {/* Main Footer Content */}
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-12"
+      data-aos="fade-up">
 
         {/* Press */}
         <div>
@@ -54,7 +56,7 @@ const Footer = () => {
       </div>
 
       {/* Bottom Links */}
-      <div className="border-t border-gray-700 mt-12 pt-6 flex flex-col md:flex-row justify-between text-sm text-gray-300 gap-4">
+      <div className="border-t border-gray-700 mt-12 pt-6 flex flex-col md:flex-row justify-between text-sm text-gray-400 gap-4">
         <div className="flex flex-wrap gap-4">
           <span className="hover:text-white cursor-pointer">Privacy</span>
           <span className="hover:text-white cursor-pointer">Cookies Settings</span>
@@ -64,7 +66,7 @@ const Footer = () => {
           <span className="hover:text-white cursor-pointer">Vulnerability Disclosure Policy</span>
           <span className="hover:text-white cursor-pointer">Complaints Procedure</span>
         </div>
-        <p className="text-white">All rights reserved © PUMA SE 2026</p>
+        <p className="text-gray-400 hover:text-white cursor-pointer">All rights reserved © PUMA SE 2026</p>
       </div>
     </footer>
   );

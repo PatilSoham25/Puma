@@ -36,12 +36,13 @@ const HeroSlider = () => {
 
         return (
             <div className='min-h-screen bg-black text-white flex flex-col md:flex-row items-center justify-between px-6 md:px-16 gap-6'>
-                <div className='max-w-xl'>
+                <div className='max-w-xl' data-aos="fade-right">
                     <h1 className='text-4xl md:text-7xl font-extrabold mb-6'>{slides[current].title}</h1>
                     <p className='text-base md:text-lg text-gray-300 leading-relaxed'>{slides[current].description}</p>
                 </div>
 
-                <div className='relative w-full md:w-[420px] h-[350px] md:h-[520px] overflow-hidden'>
+                <div className='relative w-full md:w-[420px] h-[350px] md:h-[520px] overflow-hidden'
+                data-aos="fade-left">
                     <img src={slides[current].image} alt="slide"
                     className='w-full min-h-full object-cover'
                     />

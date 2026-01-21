@@ -17,18 +17,23 @@ const brands = [
 const PumaBrands = () => {
   return (
     <div className='bg-black text-white px-6 md:px-16 py-20'>
-      <h2 className='text-4xl md:text-6xl font-extrabold mb-16'>PUMA BRANDS</h2>
+      <h2 className='text-4xl md:text-6xl font-extrabold mb-16'
+      data-aos="fade-down">PUMA BRANDS</h2>
       <div className='flex flex-cols-1 md:flex-cols-2 gap-16'>
         {brands.map((brand, index) => (
-            <div key={index}>
+            <div key={index} data-aos="fade-up">
                 <h3 className="text-2xl font-bold mb-6">{brand.name}</h3>
-                <div className="bg-white p-10 flex items-center justify-center mb-8">
+                <div className="bg-white p-10 flex items-center justify-center mb-8"
+                data-aos='zoom-in'>
                     <img src={brand.logo} alt={brand.name}
                     className='max-h-24 object-contain'
+                    
                     />
                 </div>
-                <p className="text-gray-300 leading-relaxed mb-8">{brand.description}</p>
-                <button className="bg-white text-black px-6 py-3 font-semibold hover:bg-yellow-300"> {brand.cta}</button>
+                <p className="text-gray-300 leading-relaxed mb-8"
+                data-aos='fade-up'>{brand.description}</p>
+                <button className="bg-white text-black px-6 py-3 font-semibold hover:bg-yellow-300 cursor-pointer"
+                data-aos='fade-up'> {brand.cta}</button>
             </div>
         ))}
       </div>
